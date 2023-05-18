@@ -10,4 +10,4 @@ This repository hosts the code used in the manuscript *Coevolution increases rob
 
 Please note that when running code, you may have to update paths to work on your machine. 
 
-We are also providing the data used to generate all figures in the manuscript. This consists of three `.Rdata` files that contain the proccesed output of running the simulations. This data can be found here: https://github.com/fp3draza/coevolution_robustness/releases. 
+We are also providing the data used to generate all figures in the manuscript. This consists of `.Rdata` files that contain the proccesed output of running the simulations. This data can be found here: https://github.com/fp3draza/coevolution_robustness/releases. 
