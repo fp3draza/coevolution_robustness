@@ -5,8 +5,8 @@ rm(list=ls())
 require(dplyr)
 
 # directories
-dir_truncated <- '/home/fernando/coevolution_robustness/output/truncated/summarised_output/'
-dir_uniform <- '/home/fernando/coevolution_robustness/output/uniform/summarised_output/'
+dir_truncated <- '/home/fernando/coevolution_robustness/output/coevolution/truncated/summarised_output/'
+dir_uniform <- '/home/fernando/coevolution_robustness/output/coevolution/uniform/summarised_output/'
 network_shape <- read.csv('/home/fernando/coevolution_robustness/input/network_shapes.csv')
 
 # list all subfolders

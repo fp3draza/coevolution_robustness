@@ -354,8 +354,8 @@ end
 @everywhere function store_traits_and_network_to_file(traits, network, time, type_evo, type_connectance, m_val, alpha, replica, id, distribution)
 
     # store output
-    writedlm(string("/home/fernando/coevolution_robustness/output/",distribution,"/networks/",id,"_interaction_type_",type_evo,"_",type_connectance,"_connectance_m_",m_val,"_alpha_",alpha,"_replica_", replica,".csv"), network)
-    writedlm(string("/home/fernando/coevolution_robustness/output/",distribution,"/traits/",id,"_interaction_type_",type_evo,"_",type_connectance,"_connectance_m_",m_val,"_alpha_",alpha,"_replica_", replica,".csv"), traits)
+    writedlm(string("/home/fernando/coevolution_robustness/output/no_coevolution/",distribution,"/networks/",id,"_interaction_type_",type_evo,"_",type_connectance,"_connectance_m_",m_val,"_alpha_",alpha,"_replica_", replica,".csv"), network)
+    writedlm(string("/home/fernando/coevolution_robustness/output/no_coevolution/",distribution,"/traits/",id,"_interaction_type_",type_evo,"_",type_connectance,"_connectance_m_",m_val,"_alpha_",alpha,"_replica_", replica,".csv"), traits)
 
     # return
     return 1
@@ -451,7 +451,7 @@ end
 
     # if final timestep, write to file
     if t == 200
-        CSV.write(string("/home/fernando/coevolution_robustness/output/",distribution,"/components/",id,"_interaction_type_",type_evo,"_",type_connectance,"_connectance_m_",m_val,"_alpha_",alpha,"_replica_", replica,".csv"),  df_components)
+        CSV.write(string("/home/fernando/coevolution_robustness/output/no_coevolution/",distribution,"/components/",id,"_interaction_type_",type_evo,"_",type_connectance,"_connectance_m_",m_val,"_alpha_",alpha,"_replica_", replica,".csv"),  df_components)
     end
 
     return df_components
