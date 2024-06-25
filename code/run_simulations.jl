@@ -837,7 +837,7 @@ function run_simulations()
                     file_name = string("interaction_type_",type_evo,"_variable_connectance_m_",m,"_alpha_",alpha,".csv")
 
                     # create relative path
-                    rel_path = string("output_equilibrium/",distribution,"/",type_evo,"/",file_name)
+                    rel_path = string("output/",distribution,"/",type_evo,"/",file_name)
 
                     # current location
                     current_directory = @__DIR__
