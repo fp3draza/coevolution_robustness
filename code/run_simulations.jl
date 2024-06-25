@@ -49,23 +49,6 @@ end
 
 end
 
-#@everywhere function draw_initial_trait_values(num_resources, num_consumers, replicate, func, val1, val2)
-
-
-
-  # define distribution
-#  distribution_to_draw_from = Truncated(func(val1, val2), 0 , 10)
-
-  # seed
-#  Random.seed!(replicate)
-
-  # draw traits from distribution
-#  trait_sample = rand(distribution_to_draw_from, num_resources + num_consumers)
-
- # return trait_sample
-
-#end
-
 @everywhere function draw_initial_trait_values(num_resources, num_consumers, replicate, distribution)
 
     if distribution == "truncated"
@@ -366,27 +349,8 @@ end
     df[1, "alpha"] = alpha
     df[1, "replica"] = replica
     df[1, "network_name"] = id
-
-    #if  type_evo == "no_coevolution"
-
-     # return df[df.generation .== 1, :]
-
-    #else
-
-      # compute metrics
-      #num_rewiring_events = compute_rewiring_events(network_past, network_current)
-      #average_trait_change = compute_average_trait_change(traits_past, traits_current)
-      #average_trait_matching = compute_average_trait_matching(traits_current, network_current, alpha)
-      #average_theta_matching = compute_average_theta_matching(traits_current, theta, alpha)
-
-
-      # update datarame
-      #df[t, "rewiring_events"] = num_rewiring_events
-      #df[t, "average_trait_change"] = average_trait_change
-      #df[t, "average_trait_matching"] = average_trait_matching
-      #df[t, "average_theta_matching"] = average_theta_matching
-
-      return df
+	
+    return df
 
 end
 
