@@ -11,4 +11,4 @@ Please note that when running code, you may have to update paths to work on your
 
 We are also providing the data used to generate all figures in the main text of the manuscript. This consists of an `.Rdata` file that contain the proccesed output of running the simulations. This data can be found here: https://github.com/fp3draza/coevolution_robustness/releases. 
 
-[figure_1.pdf](https://github.com/user-attachments/files/16011565/figure_1.pdf)
+![figure_1](https://github.com/fp3draza/coevolution_robustness/assets/65344029/88aa5368-2b8e-4424-a695-347cbea7020a)
