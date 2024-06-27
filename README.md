@@ -1,6 +1,6 @@
 # Coevolution increases robustness to extinctions in mutualistic but not exploitative communities
 
-This repository hosts the code used in the manuscript *Coevolution increases robustness to extinctions in mutualistic but not exploitative communities*.The directory is structured as follows:
+This repository hosts the code used in the manuscript *Coevolution increases robustness to extinctions in mutualistic but not exploitative communities*. The directory is structured as follows:
 
 - code: contains all code to run simulations, process results, and visualise output.
 - input: directory where data used to parametrise simulations is stored. 
