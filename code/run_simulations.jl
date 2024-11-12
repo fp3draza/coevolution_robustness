@@ -726,6 +726,8 @@ end
             # write final values to file
             df = update_dataframe(df, t, f, rewired_network_after_coevolution, init, traits_after_coevolution, type_evo, alpha, type_connectance, num_resources, num_consumers, m_val, replica, id, theta, distribution)
 
+	    break
+
         end
 
       end
